@@ -1,8 +1,9 @@
-/small_arms_factory
+/Small Arms Factory
 ├── app.py
+├── small_arms_factory.db  # This will be created automatically
 ├── static
 │   ├── styles.css
 │   ├── script.js
-│   └── (images are kept here)
+│   └──  # images are kept here
 └── templates
     └── index.html
