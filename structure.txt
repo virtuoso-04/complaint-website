@@ -1,0 +1,8 @@
+/small_arms_factory
+├── app.py
+├── static
+│   ├── styles.css
+│   ├── script.js
+│   └── (images are kept here)
+└── templates
+    └── index.html

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Small Arms Factory - Ministry of Defence</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="https://via.placeholder.com/150x150" alt="Small Arms Factory Logo">
+            <img src="{{ url_for('static', filename='your_logo.png') }}" alt="Small Arms Factory Logo">
         </div>
         <nav>
             <ul>
@@ -36,17 +36,17 @@
         <h2>Our Services</h2>
         <div class="service-items">
             <div class="service-item">
-                <img src="https://via.placeholder.com/80" alt="Advanced Weaponry">
+                <img src="{{ url_for('static', filename='service1.png') }}" alt="Advanced Weaponry">
                 <h3>Advanced Weaponry</h3>
                 <p>Providing state-of-the-art weapons for defence needs.</p>
             </div>
             <div class="service-item">
-                <img src="https://via.placeholder.com/80" alt="Quality Assurance">
+                <img src="{{ url_for('static', filename='service2.png') }}" alt="Quality Assurance">
                 <h3>Quality Assurance</h3>
                 <p>Ensuring the highest quality standards in every product.</p>
             </div>
             <div class="service-item">
-                <img src="https://via.placeholder.com/80" alt="Research & Development">
+                <img src="{{ url_for('static', filename='service3.png') }}" alt="Research & Development">
                 <h3>Research & Development</h3>
                 <p>Innovating cutting-edge technology for modern warfare.</p>
             </div>
@@ -58,24 +58,24 @@
         <h2>Our Products</h2>
         <div class="product-list">
             <div class="product-item">
-                <img src="https://via.placeholder.com/80" alt="Rifle">
+                <img src="{{ url_for('static', filename='product1.png') }}" alt="Rifle">
                 <h3>Rifles</h3>
                 <p>Precision-built rifles for tactical operations.</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/80" alt="Pistol">
+                <img src="{{ url_for('static', filename='product2.png') }}" alt="Pistol">
                 <h3>Pistols</h3>
                 <p>Compact and powerful pistols for close combat.</p>
             </div>
             <div class="product-item">
-                <img src="https://via.placeholder.com/80" alt="Carbine">
+                <img src="{{ url_for('static', filename='product3.png') }}" alt="Carbine">
                 <h3>Carbines</h3>
                 <p>Lightweight carbines for rapid deployment forces.</p>
             </div>
         </div>
     </section>
 
-    <!-- Complaints Section (Bento Box UI) -->
+    <!-- Complaints Section -->
     <section class="complaints-section" id="complaints">
         <div class="complaints-container">
             <h2>Submit Your Complaint</h2>
@@ -120,6 +120,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
